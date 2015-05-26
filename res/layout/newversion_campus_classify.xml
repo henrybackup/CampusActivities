@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+ 
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/layout_c1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="@color/classify_orange"
+                android:gravity="center"
+                android:text="游戏"
+                android:textColor="@color/white"
+                android:textSize="@dimen/classify_font_size"
+                android:textStyle="bold"
+                
+                 />
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="@color/classify_deepblue"
+                android:gravity="center"
+                android:text="学习"
+                 android:textSize="@dimen/classify_font_size"
+                android:textStyle="bold"
+                android:textColor="@color/white" />
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="@color/classify_pink"
+                android:gravity="center"
+                android:text="其他"
+                 android:textSize="@dimen/classify_font_size"
+                android:textStyle="bold"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_c2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="@color/classify_green"
+                android:gravity="center"
+                android:text="运动"
+                 android:textSize="@dimen/classify_font_size"
+                android:textStyle="bold"
+                android:textColor="@color/white" />
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="@color/classify_drawnred"
+                android:gravity="center"
+                 android:textSize="@dimen/classify_font_size"
+                android:textStyle="bold"
+                android:text="兴趣爱好"
+                android:textColor="@color/white" />
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                 android:textSize="@dimen/classify_font_size"
+                android:textStyle="bold"
+                android:background="@color/classify_purple"
+                android:gravity="center"
+                android:text="星座"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_c3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="@color/classify_yellow"
+                android:gravity="center"
+                 android:textSize="@dimen/classify_font_size"
+                android:textStyle="bold"
+                android:text="生活休闲"
+                android:textColor="@color/white" />
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="@color/green"
+                android:gravity="center"
+                android:text="户外活动"
+                 android:textSize="@dimen/classify_font_size"
+                android:textStyle="bold"
+                android:textColor="@color/white" />
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="@color/classify_blue"
+                android:gravity="center"
+                 android:textSize="@dimen/classify_font_size"
+                android:textStyle="bold"
+                android:text="旅游"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+ <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+         
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="StepOne:选择你的小伙伴类型" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/create_marginRL"
+                android:layout_marginRight="@dimen/create_marginRL"
+                android:layout_marginTop="@dimen/create_top"
+                android:gravity="center" >
+
+                <EditText
+                    android:id="@+id/ed_theme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tx_theme"
+                    android:background="@drawable/bg_edittext"
+                    android:ems="40"
+                    android:gravity="left"
+                    android:hint="请输入...(40字,必填)"
+                    android:lines="3"
+                    android:padding="5dp"
+                    android:textColorHint="#AAAAAA"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/tx_theme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:text="主题:"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/create_marginRL"
+                android:layout_marginRight="@dimen/create_marginRL"
+                android:layout_marginTop="@dimen/create_top" >
+
+                <EditText
+                    android:id="@+id/ed_num"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tx_num"
+                    android:background="@drawable/bg_edittext"
+                    android:hint="最多100人"
+                    android:inputType="number"
+                    android:padding="3dp"
+                    android:textColorHint="#AAAAAA"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/tx_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/ed_num"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="5dp"
+                    android:text="人数:"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tx_where"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/create_marginRL"
+                android:layout_marginRight="@dimen/create_marginRL"
+                android:layout_marginTop="@dimen/create_top"
+                android:text="去哪玩？(选填)"
+                android:textColor="@color/font_coffee" />
+
+            <ViewStub
+                android:id="@+id/stub_where"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout="@layout/newversion_stub_go_where" />
+
+            <TextView
+                android:id="@+id/tx_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/create_marginRL"
+                android:layout_marginRight="@dimen/create_marginRL"
+                android:layout_marginTop="@dimen/create_top"
+                android:text="详细描述"
+                android:textColor="@color/font_coffee" />
+
+            <EditText
+                android:id="@+id/ed_detail"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="@dimen/create_marginRL"
+                android:layout_marginRight="@dimen/create_marginRL"
+                android:layout_marginTop="@dimen/create_top"
+                android:background="@drawable/bg_edittext"
+                android:gravity="left"
+                android:hint="详细信息..."
+                android:inputType="textMultiLine"
+                android:maxLines="10"
+                android:padding="5dp"
+                android:textColorHint="#AAAAAA"
+                android:textSize="15dp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/tx_complete"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="@dimen/create_marginRL"
+                android:layout_marginRight="@dimen/create_marginRL"
+                android:layout_marginTop="@dimen/create_top"
+                android:background="#87CEFA"
+                android:text="完成"
+                android:textColor="@color/white"
+                android:textSize="20dp" 
+                
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
